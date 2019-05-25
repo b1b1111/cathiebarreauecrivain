@@ -1,0 +1,290 @@
+/*
+Theme Name:     site wordpress
+Description:    Theme wordpress de Rivière sans retour
+Author:         Benjamin lefebvre
+Author URI:     https://github.com/b1b1111
+Template:       catch-responsive
+*/
+
+/*------------------------GLOBAL--------------------------*/
+html 
+{
+	overflow-x: hidden;
+}
+
+/*----------------------Title---------------------------*/
+.site-title a {
+	color: #4b5555e5;
+	font-size: 1.2em;
+	font-family: sans-serif;
+}
+
+.site-title a:hover {
+	color: #4b5555e5;
+	font-size: 1.2em;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+
+.entry-title {
+	color: #3cbebedc;
+}
+
+
+/*--------------------------------Typography----------------------------------*/
+
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #272626;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 2;
+	background-color:white;
+}
+
+.sidebar-primary .widget { 
+	margin: 0 0 40px;
+	padding: 22px 14px 22px 14px;
+	border: 1px none;
+	background-color: #e6e6e6e1; /*couleur widget grise*/
+	box-shadow: 1px 2px 5px gray;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+#nav-below .wp-pagenavi a,
+#nav-below .wp-pagenavi span,
+.page-links span {
+	border: none;
+	float: left;
+	height: 28px;
+	color: #3cbebedc !important;
+	text-align: center;
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #3cbebedc;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+#content #infinite-handle span button {
+	background-color: #eee;
+	color: #3cbebedc;
+	display: inline;
+	font-size: 16px;
+	padding: 10px 30px;
+	text-shadow: none;
+	width: 100%;
+}
+
+.site-title a:hover {
+	color: #767e7ee5;
+	text-decoration: none;
+}
+
+.entry-title a:hover {
+	color: #3cbebedc;
+}
+
+#site-generator a:hover {
+	color: #3cbebedc;
+}
+
+a {
+	color: #3cbebedc;
+	font-weight: 600;
+	cursor: pointer;
+    text-decoration: none;
+}
+/*--------------------------------------------------------------
+6. Navigation
+--------------------------------------------------------------*/
+.menu-toggle {
+	display: none;
+}
+
+.sidr ul li span,
+.sidr ul li a 
+{
+    display: inline-block !important;
+}
+
+.nav-primary,
+.nav-footer {
+	background-color: #505757e5;
+	position: relative;
+	z-index: 198;
+}
+
+.nav-secondary {
+    background-color: #919696cb;
+    position: relative;
+    z-index: 197;
+}
+
+.catchresponsive-nav-menu a {
+	color: #fff;
+}
+
+.sidebar-header-right .widget_nav_menu a {
+	color: #f4fcfc;
+}
+
+.catchresponsive-nav-menu li a:hover,
+.catchresponsive-nav-menu li a:focus,
+.sidebar-header-right .widget_nav_menu li a:hover,
+.sidebar-header-right .widget_nav_menu li a:focus {
+	background-color: #fff;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Hover */
+.catchresponsive-nav-menu li:hover > a {
+	background-color: #fff;
+	color: #3cbebedc;
+}
+
+.sidebar-header-right .widget_nav_menu li:hover > a {
+	background-color: #222;
+	color: #3cbebedc;
+}
+
+/* Hover Parent */
+.catchresponsive-nav-menu .current-menu-item > a,
+.catchresponsive-nav-menu .current-menu-ancestor > a,
+.catchresponsive-nav-menu .current_page_item > a,
+.catchresponsive-nav-menu .current_page_ancestor > a {
+	background-color: #fff;
+	color: rgb(77, 75, 75);
+}
+
+.sidebar-header-right .widget_nav_menu .current-menu-item > a,
+.sidebar-header-right .widget_nav_menu .current-menu-ancestor > a {
+	background-color: #222;
+	color: rgb(77, 75, 75);
+}
+
+.catchresponsive-nav-menu .sub-menu a,
+.catchresponsive-nav-menu .children a {
+	background-color: #fff;
+	color: rgb(77, 75, 75);
+}
+
+.sidebar-header-right .widget_nav_menu .sub-menu a {
+	background-color: #222;
+	color: #7c7e7ecb;
+}
+
+.sidebar-header-right .widget_nav_menu .sub-menu {
+	border-top: 1px solid #333;
+}
+
+.sidebar-header-right .widget_nav_menu .sub-menu a,
+.sidebar-header-right .widget_nav_menu .sub-menu .sub-menu {
+	border-color: #333;
+}
+
+.nav-secondary .catchresponsive-nav-menu a {
+	color: rgb(59, 58, 58);
+}
+
+.nav-secondary .catchresponsive-nav-menu .sub-menu a,
+.nav-secondary .catchresponsive-nav-menu .children a {
+	background-color: #fff;
+	border-color: #7c7e7ecb;
+}
+
+.catchresponsive-nav-menu .sub-menu li a:hover,
+.catchresponsive-nav-menu .sub-menu li a:focus,
+.catchresponsive-nav-menu .children li a:hover,
+.catchresponsive-nav-menu .children li a:focus,
+.sidebar-header-right .widget_nav_menu .sub-menu li a:hover,
+.sidebar-header-right .widget_nav_menu .sub-menu li a:focus {
+	background-color: #000;
+	color: rgb(58, 57, 57);
+}
+
+.catchresponsive-nav-menu .sub-menu .sub-menu,
+.catchresponsive-nav-menu .children .children {
+	border-top: 1px solid #eee;
+	margin: -43px 0 0 249px;
+}
+
+.sidebar-header-right .widget_nav_menu .sub-menu .sub-menu {
+	margin: -43px 249px 0 0;
+}
+
+.nav-secondary .sub-menu .sub-menu,
+.nav-secondary .catchresponsive-nav-menu .children .children  {
+	border-color: #7c7e7ecb;
+}
+
+/* Menu Search */
+
+#search-toggle {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    height: 46px;
+    line-height: 52px;
+    text-align: center;
+    width: 42px;
+}
+
+#search-toggle:hover {
+	background-color: #fff;
+    color: #000;
+}
+
+#search-container {
+    background-color: #fff;
+}
+
+.nav-primary .search-field {
+	border-color: #eee;
+}
+
+.nav-primary .search-field:focus {
+	border-color: #7c7e7ecb;
+	color: #000;
+}
+
+/*Image banner*/
+
+a img {
+	border: 0;
+	width: 100%;
+}
+
+/*SEARCH*/
+
+#masthead .search-field {
+	display: none;
+}
